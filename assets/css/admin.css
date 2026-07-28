@@ -1,0 +1,489 @@
+/* ======================================================
+   WRAPPER
+====================================================== */
+
+.wrapper{
+
+    display:flex;
+
+    min-height:100vh;
+
+}
+
+
+/* ======================================================
+   SIDEBAR
+====================================================== */
+
+.sidebar{
+
+    width:280px;
+
+    background:var(--primary-dark);
+
+    color:white;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    height:100vh;
+
+    overflow-y:auto;
+
+}
+
+
+/* ======================================================
+   LOGO
+====================================================== */
+
+.logo-area{
+
+    text-align:center;
+
+    padding:30px 20px;
+
+}
+
+.logo-area img{
+
+    width:80px;
+
+}
+
+.logo-area h4{
+
+    margin-top:15px;
+
+    font-weight:600;
+
+}
+
+.logo-area span{
+
+    display:block;
+
+    font-size:15px;
+
+}
+
+.logo-area small{
+
+    color:#d8d8d8;
+
+}
+
+
+/* ======================================================
+   SIDEBAR MENU
+====================================================== */
+
+.sidebar-menu{
+
+    flex:1;
+
+    margin-top:20px;
+
+}
+
+.sidebar .nav-link{
+
+    color:white;
+
+    padding:15px 25px;
+
+    transition:var(--transition);
+
+    border-left:4px solid transparent;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.sidebar .nav-link:hover{
+
+    background:rgba(255,255,255,.08);
+
+    border-left:4px solid white;
+
+}
+
+.sidebar .nav-link.active{
+
+    background:var(--primary);
+
+    border-left:4px solid white;
+
+    font-weight:600;
+
+}
+
+.sidebar .nav-link i{
+
+    font-size:18px;
+
+}
+
+
+/* ======================================================
+   LOGOUT
+====================================================== */
+
+.logout-area{
+
+    padding:20px;
+
+}
+
+.logout{
+
+    color:white;
+
+}
+
+
+/* ======================================================
+   MAIN CONTENT
+====================================================== */
+
+.main-content{
+
+    flex:1;
+
+    margin-left:280px;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+/* ======================================================
+   NAVBAR
+====================================================== */
+
+.admin-navbar{
+
+    height:85px;
+
+    padding:0 30px;
+
+    border-bottom:1px solid var(--border);
+
+    background:white;
+
+}
+
+.admin-profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.notification-btn{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+}
+
+
+/* ======================================================
+   CONTENT
+====================================================== */
+
+.content-area{
+
+    flex:1;
+
+    padding:35px;
+
+}
+
+
+/* ======================================================
+   DASHBOARD CARD
+====================================================== */
+
+.dashboard-card{
+
+    transition:var(--transition);
+
+    box-shadow:var(--shadow);
+
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+/* ======================================================
+   FOOTER
+====================================================== */
+
+.admin-footer{
+
+    background:white;
+
+    padding:18px 30px;
+
+    border-top:1px solid var(--border);
+
+}
+
+
+/* ======================================================
+   PAGE HEADER
+====================================================== */
+
+.page-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.page-header h3{
+
+    margin:0;
+
+    font-weight:600;
+
+}
+
+.page-header p{
+
+    margin:5px 0 0;
+
+    color:var(--text-light);
+
+}
+
+
+/* ======================================================
+   BUTTON TAMBAH
+====================================================== */
+
+.btn-add{
+
+    background:var(--primary);
+
+    color:#fff;
+
+    border:none;
+
+    padding:10px 20px;
+
+    border-radius:10px;
+
+    font-weight:500;
+
+    transition:var(--transition);
+
+}
+
+.btn-add:hover{
+
+    background:var(--primary-dark);
+
+    color:#fff;
+
+}
+
+
+/* ======================================================
+   TABLE CARD
+====================================================== */
+
+.table-card{
+
+    border:none;
+
+    border-radius:16px;
+
+    box-shadow:var(--shadow);
+
+    overflow:hidden;
+
+}
+
+.table-card .card-body{
+
+    padding:0;
+
+}
+
+.table{
+
+    margin-bottom:0;
+
+}
+
+.table thead{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+.table th{
+
+    padding:15px;
+
+    vertical-align:middle;
+
+    white-space:nowrap;
+
+}
+
+.table td{
+
+    padding:15px;
+
+    vertical-align:middle;
+
+}
+
+.table tbody tr:hover{
+
+    background:#f8f9fa;
+
+}
+
+
+/* ======================================================
+   ACTION BUTTON
+====================================================== */
+
+.action-btn{
+
+    display:flex;
+
+    gap:8px;
+
+    flex-wrap:wrap;
+
+}
+.action-btn .btn{
+
+    min-width:38px;
+
+}
+
+
+/* ======================================================
+   BADGE STATUS
+====================================================== */
+
+.badge-status{
+
+    padding:7px 14px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:500;
+
+}
+
+.badge-active{
+
+    background:#d1fae5;
+
+    color:#065f46;
+
+}
+
+.badge-inactive{
+
+    background:#fee2e2;
+
+    color:#991b1b;
+
+}
+
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media(max-width:992px){
+
+.sidebar{
+
+    width:240px;
+
+}
+
+.main-content{
+
+    margin-left:240px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.sidebar{
+
+    display:none;
+
+}
+
+.main-content{
+
+    margin-left:0;
+
+}
+
+.content-area{
+
+    padding:20px;
+
+}
+
+.admin-navbar{
+
+    height:auto;
+
+    padding:20px;
+
+}
+
+}
